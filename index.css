@@ -1240,6 +1240,80 @@ h4 {
     .kpi-value {
         font-size: 2rem;
     }
+/* ───────────────────────────────────────────
+   GAP BRIDGE & ARROWS
+   ─────────────────────────────────────────── */
+.gap-bridge-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    grid-column: span 1;
+}
+
+.routine-arrow {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--pure-black);
+    animation: arrow-pulse 2s infinite;
+}
+
+@keyframes arrow-pulse {
+    0%, 100% { transform: translateX(0); opacity: 0.6; }
+    50% { transform: translateX(10px); opacity: 1; }
+}
+
+.gap-card {
+    border: 4px dashed var(--electric-coral) !important;
+    background: var(--white) !important;
+    box-shadow: 10px 10px 0px var(--pure-black) !important;
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+/* ───────────────────────────────────────────
+   PREMIUM VISION CALLOUT
+   ─────────────────────────────────────────── */
+.vision-callout {
+    max-width: 900px;
+    margin: 80px auto 0;
+    padding: 60px 40px;
+    background: var(--starface-yellow);
+    border: 4px solid var(--pure-black);
+    box-shadow: 20px 20px 0px var(--pure-black);
+    position: relative;
+    text-align: center;
+}
+
+.vision-content {
+    position: relative;
+    z-index: 2;
+}
+
+.vision-quote-icon {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    font-size: 8rem;
+    font-family: serif;
+    color: var(--pure-black);
+    opacity: 0.1;
+    line-height: 1;
+}
+
+.vision-callout p {
+    font-size: clamp(1.4rem, 4vw, 2.4rem);
+    font-weight: 900;
+    line-height: 1.2;
+    color: var(--pure-black);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.vision-callout strong {
+    color: var(--electric-coral);
+    -webkit-text-stroke: 1px var(--pure-black);
+}
 
     .cta-btn {
         font-size: 1rem;
