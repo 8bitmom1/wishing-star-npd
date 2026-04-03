@@ -6,53 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wishing Star | NPD Strategic Deck</title>
     <meta name="description"
-        content="A Strategic NPD Roadmap by Neysha Marelly — Engineering the next phase of the Starface lifecycle.">
+        content="A Strategic NPD Roadmap by Neysha Lopez — Engineering the next phase of the Starface lifecycle.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
+    <!-- ★ NAV BAR ★ -->
+    <nav class="top-nav" id="topNav">
+        <div class="nav-inner">
+            <span class="nav-logo">★ WISHING STAR</span>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#routine">White Space</a>
+                <a href="#prototype">Product</a>
+                <a href="#market-validation">Validation</a>
+                <a href="#retail">Retail</a>
+                <a href="#kpi-dashboard">KPIs</a>
+                <a href="#roadmap">Roadmap</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- ★ HERO ★ -->
     <section class="section hero" id="hero">
-        <div class="container hero-inner">
-            <span class="pill-tag">✦ EXECUTIVE SUMMARY</span>
+        <!-- Floating particles -->
+        <div class="hero-particles" aria-hidden="true">
+            <span class="particle p1">★</span>
+            <span class="particle p2">✦</span>
+            <span class="particle p3">★</span>
+            <span class="particle p4">✦</span>
+            <span class="particle p5">★</span>
+            <span class="particle p6">✦</span>
+        </div>
 
-            <h1 class="hero-title">
-                THE WISHING STAR:<br>CAPTURING THE<br>AFTERMATH
+        <div class="container hero-inner">
+            <span class="pill-tag reveal">✦ EXECUTIVE SUMMARY</span>
+
+            <h1 class="hero-title reveal">
+                THE WISHING STAR<span class="hero-colon">:</span><br>CAPTURING THE<br>AFTERMATH
             </h1>
 
-            <p class="hero-subtitle">
-                A Strategic NPD Roadmap by <strong>Neysha Lopez</strong>.<br>
+            <p class="hero-subtitle reveal">
+                A Strategic NPD Roadmap by <strong>Neysha Lopez</strong><br>
                 Engineering the next phase of the Starface lifecycle.
             </p>
 
             <div class="hero-actions reveal">
-                <a href="https://app.asana.com/1/1200903084173429/project/1213880059606743/list/1213869568833213"
-                    class="btn btn-primary" target="_blank">
-                    ASANA BLUEPRINT
+                <a href="https://app.asana.com/1/1200903084173429/project/1213914692915578/list/1213914696145274"
+                    class="btn btn-primary" target="_blank" rel="noopener">
+                    VIEW ASANA BLUEPRINT
                     <span class="btn-icon">→</span>
+                </a>
+                <a href="#market-validation" class="btn btn-outline">
+                    SEE THE DATA
+                    <span class="btn-icon">↓</span>
                 </a>
             </div>
 
-            <div class="hero-star-wrap">
-                <!-- Inline SVG star with smiley -->
+            <div class="hero-star-wrap reveal">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Starface logo">
                     <defs>
                         <filter id="star-shadow">
                             <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.15" />
                         </filter>
+                        <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B6B" />
+                            <stop offset="100%" style="stop-color:#FF4D4D" />
+                        </linearGradient>
                     </defs>
                     <polygon points="100,8 123,72 192,72 136,112 156,178 100,142 44,178 64,112 8,72 77,72"
-                        fill="#FF4D4D" stroke="#000" stroke-width="6" stroke-linejoin="round"
+                        fill="url(#starGrad)" stroke="#000" stroke-width="6" stroke-linejoin="round"
                         filter="url(#star-shadow)" />
-                    <!-- Eyes -->
                     <circle cx="78" cy="88" r="8" fill="#000" />
                     <circle cx="122" cy="88" r="8" fill="#000" />
-                    <!-- Smile -->
                     <path d="M 76 110 Q 100 134 124 110" fill="none" stroke="#000" stroke-width="6"
                         stroke-linecap="round" />
                 </svg>
             </div>
+        </div>
+        <div class="hero-scroll-cue" aria-hidden="true">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
@@ -131,7 +169,7 @@
             <!-- Redesigned Vision Callout -->
             <div class="vision-callout reveal">
                 <div class="vision-content">
-                    <span class="vision-quote-icon">“</span>
+                    <span class="vision-quote-icon">"</span>
                     <p>Extending the customer lifecycle by capturing the <strong>post-blemish healing phase</strong>.</p>
                 </div>
             </div>
@@ -160,38 +198,115 @@
                         <li><strong>Compliance:</strong> Clean, Ulta Conscious Beauty, WERCSmart</li>
                         <li><strong>Positioning:</strong> First-to-market PIH patch in clean beauty</li>
                     </ul>
+                    <div class="ingredient-badges">
+                        <span class="ingredient-badge">🧬 Tranexamic Acid</span>
+                        <span class="ingredient-badge">🧪 Niacinamide</span>
+                        <span class="ingredient-badge">🌿 Clean Formula</span>
+                        <span class="ingredient-badge">🐰 Cruelty-Free</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ★ MARKET VALIDATION ★ -->
-    <section class="section consumer-voice" id="market-validation">
+    <section class="section market-validation-section" id="market-validation">
         <div class="container">
             <div class="reveal">
                 <h2 class="section-header text-center">MARKET VALIDATION</h2>
                 <span class="section-header-accent"></span>
-                <p class="routine-intro text-center">The "Aftermath" is a multi-billion dollar gap driven by 1.2M+ views
-                    per trending PIH post.</p>
+                <p class="section-subhead text-center">The data doesn't just support this category — it demands it.</p>
             </div>
-            <div class="voice-grid reveal">
-                <div class="voice-visual">
-                    <img src="market_validation.png" alt="Market data showing high PIH demand and dissatisfaction">
+
+            <!-- Market Size Cards -->
+            <div class="market-stats-grid reveal">
+                <div class="market-stat-card">
+                    <div class="market-stat-icon">📊</div>
+                    <div class="market-stat-value">$10.5B+</div>
+                    <div class="market-stat-label">GLOBAL ACNE TREATMENT MARKET (2024)</div>
+                    <div class="market-stat-detail">Projected to reach $16.9B by 2033 at ~5.5% CAGR</div>
+                    <a class="market-source" href="https://www.skyquestt.com/report/acne-treatment-market" target="_blank" rel="noopener">Source: SkyQuest Technology, 2025 ↗</a>
                 </div>
-                <div class="voice-content">
+                <div class="market-stat-card">
+                    <div class="market-stat-icon">🔬</div>
+                    <div class="market-stat-value">$1.4B–$6B</div>
+                    <div class="market-stat-label">HYPERPIGMENTATION TREATMENT MARKET</div>
+                    <div class="market-stat-detail">PIH is the fastest-growing segment at 6–12% CAGR</div>
+                    <a class="market-source" href="https://www.mordorintelligence.com/industry-reports/hyperpigmentation-treatment-market" target="_blank" rel="noopener">Source: Mordor Intelligence, 2025 ↗</a>
+                </div>
+                <div class="market-stat-card">
+                    <div class="market-stat-icon">🩹</div>
+                    <div class="market-stat-value">$610M</div>
+                    <div class="market-stat-label">ANTI-ACNE DERMAL PATCH MARKET (2024)</div>
+                    <div class="market-stat-detail">Expected to reach $1.4B by mid-2030s at ~8% CAGR</div>
+                    <a class="market-source" href="https://www.credenceresearch.com/report/anti-acne-dermal-patch-market" target="_blank" rel="noopener">Source: Credence Research, 2024 ↗</a>
+                </div>
+            </div>
+
+            <!-- Consumer Insight + Clinical Data -->
+            <div class="validation-two-col reveal">
+                <div class="validation-col">
+                    <h3 class="validation-col-title">
+                        <span class="validation-icon">💬</span>
+                        CONSUMER SIGNAL
+                    </h3>
                     <div class="quote-card">
                         <p>"My pimples last 3 days but the marks last 3 MONTHS. Why does nothing work??"</p>
-                        <span class="quote-source">TOP TIKTOK SENTIMENT (1.2M+ VIEWS)</span>
+                        <span class="quote-source">TOP TIKTOK SENTIMENT · 1.2M+ VIEWS PER TRENDING PIH POST</span>
                     </div>
                     <div class="quote-card">
-                        <p>Consumers are 94% dissatisfied with current professional dark spot advice, driving them to
-                            #SkinTok for solutions.</p>
-                        <span class="quote-source">JDD CLINICAL STUDY DATA</span>
+                        <p>"I've tried everything for my dark spots — vitamin C, retinol, even peels. Nothing targets the specific mark."</p>
+                        <span class="quote-source">REDDIT r/SkincareAddiction · 2.8M MEMBERS</span>
                     </div>
-                    <div class="voice-stat-pill">
-                        <strong>107%</strong> Surge in Tranexamic Acid interest (2024)—the exact window for the Wishing
-                        Star launch.
+                    <div class="insight-stat">
+                        <strong>65%</strong> of Gen Z consumers cite acne treatment as a top skincare priority.
+                        <a class="market-source" href="https://www.statista.com/statistics/1334325/most-common-skin-concerns-among-us-skin-care-shoppers-by-generation/" target="_blank" rel="noopener">Source: Statista Consumer Survey, 2024 ↗</a>
                     </div>
+                </div>
+
+                <div class="validation-col">
+                    <h3 class="validation-col-title">
+                        <span class="validation-icon">🔬</span>
+                        CLINICAL EVIDENCE
+                    </h3>
+                    <div class="clinical-card">
+                        <h4>JDD Patient Survey (2024)</h4>
+                        <div class="clinical-stats">
+                            <div class="clinical-stat-row">
+                                <span class="clinical-num">34.7%</span>
+                                <span class="clinical-desc">of patients are dissatisfied with their current hyperpigmentation treatment results</span>
+                            </div>
+                            <div class="clinical-stat-row">
+                                <span class="clinical-num">51.4%</span>
+                                <span class="clinical-desc">say PIH marks are more bothersome than the original blemish</span>
+                            </div>
+                            <div class="clinical-stat-row">
+                                <span class="clinical-num">52.7%</span>
+                                <span class="clinical-desc">feel "not at all" or only "slightly" informed about treatment options</span>
+                            </div>
+                        </div>
+                        <a class="market-source" href="https://pubmed.ncbi.nlm.nih.gov/40627584/" target="_blank" rel="noopener">Source: "The Impact of Hyperpigmentation on the Lives of Patients" — JDD, 2025 · PubMed PMID: 40627584 ↗</a>
+                    </div>
+                    <div class="clinical-card clinical-card-accent">
+                        <h4>Topical TXA + Niacinamide Efficacy</h4>
+                        <p>A 12-week randomized clinical study confirmed that a serum combining 3% Tranexamic Acid + 5% Niacinamide shows <strong>significant improvement in PIH</strong> with visible results as early as 2 weeks. Rated well-tolerated with a favorable safety profile vs. hydroquinone.</p>
+                        <a class="market-source" href="https://pubmed.ncbi.nlm.nih.gov/31141852/" target="_blank" rel="noopener">Source: JDD · TXA + Niacinamide Clinical Study · PubMed PMID: 31141852 ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trend Data Pill -->
+            <div class="trend-banner reveal">
+                <div class="trend-item">
+                    <span class="trend-number">74%</span>
+                    <span class="trend-text">of adults 25 and under say social media content on skincare has influenced their purchasing behavior</span>
+                    <a class="market-source" href="https://cleanskinclub.com/pages/the-impact-of-social-media-on-skincare-product-choices" target="_blank" rel="noopener">Source: Clean Skin Club · Social Media Impact on Skincare, 2025 ↗</a>
+                </div>
+                <div class="trend-divider"></div>
+                <div class="trend-item">
+                    <span class="trend-number">58%</span>
+                    <span class="trend-text">of Gen Z purchased skincare in the prior month — viewing it as an essential expense, not discretionary</span>
+                    <a class="market-source" href="https://www.tricociuniversity.edu/beauty-blog/skincare-industry-statistics-2025-u-s-market-overview/" target="_blank" rel="noopener">Source: Tricoci University · Skincare Industry Statistics, 2025 ↗</a>
                 </div>
             </div>
         </div>
@@ -206,18 +321,21 @@
             </div>
             <div class="retail-grid reveal">
                 <div class="retail-card">
+                    <div class="retail-card-icon">🎯</div>
                     <span class="pill-tag">TARGET &amp; ULTA</span>
                     <h4>SHELF READY DESIGN</h4>
                     <p>Optimized primary packaging footprint to maximize units-per-shelf while maintaining Starface's
                         iconic visual gravity.</p>
                 </div>
                 <div class="retail-card">
+                    <div class="retail-card-icon">✨</div>
                     <span class="pill-tag">CLEAN BEAUTY</span>
                     <h4>ULTRACONSCIOUS COMPLIANCE</h4>
                     <p>100% Vegan, Cruelty-free, and Prop 65 compliant. Formulated to meet and exceed all mass-retail
                         "Clean" standards.</p>
                 </div>
                 <div class="retail-card">
+                    <div class="retail-card-icon">🌍</div>
                     <span class="pill-tag">PLANET FIRST</span>
                     <h4>SUSTAINABLE LIFECYCLE</h4>
                     <p>Recyclable outer cartons and FSC-certified paper sources. Proactive stability buffering to
@@ -238,6 +356,7 @@
 
             <div class="dashboard-grid reveal">
                 <div class="kpi-widget">
+                    <div class="kpi-ring"></div>
                     <div class="kpi-value">
                         <span class="counter" data-target="15">0</span>
                         <span class="kpi-suffix">MONTHS</span>
@@ -245,15 +364,17 @@
                     <div class="kpi-label">Speed to Market via proactive stability buffering</div>
                 </div>
                 <div class="kpi-widget">
+                    <div class="kpi-ring"></div>
                     <div class="kpi-value">
-                        <span class="counter" data-target="100">0</span><span style="font-size:inherit">%</span>
+                        <span class="counter" data-target="100">0</span><span class="kpi-percent">%</span>
                         <span class="kpi-suffix">CLEARANCE</span>
                     </div>
                     <div class="kpi-label">Target Clean, Ulta Conscious Beauty, &amp; WERCSmart compliance rate</div>
                 </div>
                 <div class="kpi-widget">
+                    <div class="kpi-ring"></div>
                     <div class="kpi-value">
-                        <span class="counter" data-target="75">0</span><span style="font-size:inherit">%</span>
+                        <span class="counter" data-target="75">0</span><span class="kpi-percent">%</span>
                         <span class="kpi-suffix">MARGIN</span>
                     </div>
                     <div class="kpi-label">Targeting optimized COGS via die-cut waste reduction</div>
@@ -307,13 +428,25 @@
     <!-- ★ CTA ★ -->
     <section class="section cta-section" id="cta">
         <div class="container reveal">
-            <a href="https://app.asana.com/1/1200903084173429/project/1213880059606743/list/1213869568833213"
-                class="cta-btn" id="ctaLink" target="_blank">ACCESS THE RAW ASANA BLUEPRINT</a>
-            <p class="cta-subtext">Dive into the granular operational tasks driving this strategy.</p>
+            <div class="cta-content">
+                <h2 class="cta-heading">READY TO BUILD<br>THE FUTURE?</h2>
+                <p class="cta-subtext">Dive into the granular operational tasks driving this strategy.</p>
+                <a href="https://app.asana.com/1/1200903084173429/project/1213914692915578/list/1213914696145274"
+                    class="cta-btn" id="ctaLink" target="_blank" rel="noopener">ACCESS THE RAW ASANA BLUEPRINT
+                    <span class="cta-arrow">→</span>
+                </a>
+            </div>
         </div>
     </section>
 
-    <div class="footer-stars" aria-hidden="true">★ ★ ★ ★ ★</div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-brand">★ THE WISHING STAR · NPD</span>
+                <span class="footer-credit">Strategic Deck by <strong>Neysha Lopez</strong></span>
+            </div>
+        </div>
+    </footer>
 
     <!-- ★ MODAL ★ -->
     <div class="modal-overlay" id="modalOverlay">
