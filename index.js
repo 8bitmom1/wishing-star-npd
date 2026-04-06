@@ -26,7 +26,6 @@ const roadmapData = {
         tag: 'Q3 - VALIDATION',
         title: 'RISK MITIGATION',
         points: [
-            'Leveraging chemical engineering expertise to front-load MVTR packaging tests.',
             'Preventing micro-dart melting in high-humidity transit routes (Southern US, LATAM).',
             'Validating adhesive performance on diverse skin types and moisture levels.',
             'Stress-testing sterilization protocols for micro-dart carrier sheets.'
